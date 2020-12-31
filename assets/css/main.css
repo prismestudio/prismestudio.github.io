@@ -180,6 +180,11 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+    .warning{
+        color: red
+    }
+    
+
 /* Container */
 
 	.container {
@@ -1619,7 +1624,7 @@ input, select, textarea {
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #3D3D3D;
+		background: #222222;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1637,7 +1642,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #3D3D3D;
+			background: #222222;
 		}
 
 		input[type="button"]:active,
@@ -1645,7 +1650,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #3D3D3D;
+			background: #222222;
 		}
 
 		input[type="button"].alt,
@@ -1653,7 +1658,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #3D3D3D;
+			background: #222222;
 		}
 
 			input[type="button"].alt:hover,
@@ -1661,7 +1666,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background: #3D3D3D;
+				background: #222222;
 			}
 
 			input[type="button"].alt:active,
@@ -1669,7 +1674,7 @@ input, select, textarea {
 			input[type="reset"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background: #3D3D3D;
+				background: #222222;
 			}
 
 		input[type="button"].icon:before,
@@ -1927,7 +1932,7 @@ input, select, textarea {
 			}
 
 				ul.social li a:before {
-					color: #fff;
+					color: #FFF;
 					font-size: 2em;
 					line-height: 1.5em;
 				}
@@ -1948,14 +1953,6 @@ input, select, textarea {
 						background: #3dbaf4;
 					}
 
-				ul.social li a.fa-dribbble {
-					background: #c4376b;
-				}
-
-					ul.social li a.fa-dribbble:hover {
-						background: #d4477b;
-					}
-
 				ul.social li a.fa-linkedin {
 					background: #006599;
 				}
@@ -1964,21 +1961,29 @@ input, select, textarea {
 						background: #1075a9;
 					}
 
-				ul.social li a.fa-tumblr {
-					background: #2b4661;
-				}
+				ul.social li a.fa-youtube {
+                    background: #FF0000;
+                }
 
-					ul.social li a.fa-tumblr:hover {
-						background: #3b5671;
-					}
+                    ul.social li a.fa-youtube:hover {
+                        background: #FF2222;
+                    }
 
-				ul.social li a.fa-google-plus {
-					background: #da2713;
-				}
+                ul.social li a.fa-discord {
+                    background: #2C2F33;
+                }
 
-					ul.social li a.fa-google-plus:hover {
-						background: #ea3723;
-					}
+                    ul.social li a.fa-discord:hover {
+                        background: #3D4146;
+                    }
+
+                ul.social li a.fa-trello {
+                    background: #0079BF;
+                }
+
+                    ul.social li a.fa-trello:hover {
+                        background: #0084D0;
+                    }
 
 /* Icons */
 
@@ -2130,7 +2135,7 @@ input, select, textarea {
 
 	.dropotron {
 		border-radius: 5px;
-		background-color: #252122;
+		background-color: #222222;
 		background-color: rgba(34, 30, 31, 0.98);
 		padding: 1.25em 1.5em 1.25em 1.5em;
 		font-style: italic;
