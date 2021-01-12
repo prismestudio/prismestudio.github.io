@@ -180,6 +180,15 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
+    table{
+        border-collapse: collapse
+    }
+
+    td{
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
     .warning{
         color: red
     }
@@ -2186,7 +2195,7 @@ input, select, textarea {
 	#banner {
 		background: #000000 url("../../images/illustrations/I0001.png");
 		background-position: center center;
-		background-size: auto 100%;
+		background-size: contain;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
@@ -2206,6 +2215,7 @@ input, select, textarea {
 				font-weight: 700;
 				font-size: 2.5em;
 				margin: 0 0 0.65em 0;
+                animation: fondu_header 17s ease-in-out infinite both;
 			}
 
 			#banner header p {
@@ -2214,6 +2224,7 @@ input, select, textarea {
 				font-style: normal;
 				margin: 0;
 				font-size: 1.5em;
+                animation: fondu_header 17s ease-in-out infinite both;
 			}
 
 /* Intro */
@@ -2296,6 +2307,56 @@ input, select, textarea {
 		#main .major h2 {
 			background: #f7f7f7 url("images/bg02.png");
 		}
+    
+    /* Diaporama */
+
+        .diapo{
+            position: relative;
+            overflow: hidden;
+        }
+
+        #nav-droite, #nav-gauche{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 3em;
+        }
+
+        #nav-droite{
+            right: 20px;
+        }
+        #nav-gauche{
+            left: 20px;
+        }
+
+        .elements{
+            display: flex;
+            transition: 1s linear;
+        }
+
+        .element{
+            flex: 1 0 100%;
+            position: relative;
+        }
+
+        .element > img{
+            width: 100%;
+        }
+
+        .element > iframe{
+            width: 100%;
+        }
+
+        .caption{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            background-color: rgba(255,255,255,0.4);
+            padding: 30px;
+        }
 
 /* Footer */
 
@@ -2860,7 +2921,7 @@ input, select, textarea {
 			}
 
 				#header h1 {
-					color: #252122;
+					color: #000;
 					font-weight: 900;
 					font-size: 1.75em;
 					letter-spacing: -0.035em;
