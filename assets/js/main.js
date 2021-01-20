@@ -30,6 +30,12 @@
 			noOpenerFade: true,
 			alignment: 'center'
 		});
+    
+    // Scrolly.
+		$('.scrolly')
+			.scrolly({
+				offset: 100
+			});
 
 	// Nav.
 
