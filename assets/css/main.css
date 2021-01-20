@@ -1620,6 +1620,8 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+        
+
 /* Button */
 
 	input[type="button"],
@@ -1991,6 +1993,91 @@ input, select, textarea {
                 }
 
                     ul.social li a.fa-trello:hover {
+                        background: #0084D0;
+                    }
+
+    ul.socialcompact {
+		list-style: none;
+		padding-left: 0;
+		overflow: hidden;
+		cursor: default;
+		margin: 0 0 0.25em 0;
+	}
+
+		ul.socialcompact li {
+			display: inline-block;
+			padding-left: 0;
+			margin-left: 0.75em;
+		}
+
+			ul.socialcompact li:first-child {
+				margin-left: 0;
+			}
+
+			ul.socialcompact li a {
+				display: inline-block;
+				width: 3em;
+				height: 3em;
+				text-align: center;
+				border-radius: 5px;
+				background: #888;
+				-moz-transition: background-color .25s ease-in-out;
+				-webkit-transition: background-color .25s ease-in-out;
+				-ms-transition: background-color .25s ease-in-out;
+				transition: background-color .25s ease-in-out;
+			}
+
+				ul.socialcompact li a:before {
+					color: #FFF;
+					font-size: 2em;
+					line-height: 1.5em;
+				}
+
+				ul.socialcompact li a.fa-facebook {
+					background: #3c5a98;
+				}
+
+					ul.socialcompact li a.fa-facebook:hover {
+						background: #4c6aa8;
+					}
+
+				ul.socialcompact li a.fa-twitter {
+					background: #2daae4;
+				}
+
+					ul.socialcompact li a.fa-twitter:hover {
+						background: #3dbaf4;
+					}
+
+				ul.socialcompact li a.fa-linkedin {
+					background: #006599;
+				}
+
+					ul.socialcompact li a.fa-linkedin:hover {
+						background: #1075a9;
+					}
+
+				ul.socialcompact li a.fa-youtube {
+                    background: #FF0000;
+                }
+
+                    ul.socialcompact li a.fa-youtube:hover {
+                        background: #FF2222;
+                    }
+
+                ul.socialcompact li a.fa-discord {
+                    background: #2C2F33;
+                }
+
+                    ul.socialcompact li a.fa-discord:hover {
+                        background: #3D4146;
+                    }
+
+                ul.socialcompact li a.fa-trello {
+                    background: #0079BF;
+                }
+
+                    ul.socialcompact li a.fa-trello:hover {
                         background: #0084D0;
                     }
 
