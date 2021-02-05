@@ -1549,10 +1549,6 @@ input, select, textarea {
 		margin-bottom: 2.5em;
 	}
 
-		section > :last-child, section:last-child, article > :last-child, article:last-child {
-			margin-bottom: 0;
-		}
-
 	header {
 		margin: 0 0 1.5em 0;
 	}
@@ -1619,6 +1615,13 @@ input, select, textarea {
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
+
+    .boxID {
+        background-image: url(../../images/illustrations/I0002.png);
+        background-size: cover;
+        background-position: center;
+        border-bottom: solid 1px #ccc;
+    }
 
         
 
@@ -2184,6 +2187,10 @@ input, select, textarea {
 			letter-spacing: -0.035em;
 			line-height: 1;
 		}
+
+    header a {
+        text-decoration: none;
+    }
 
 /* Nav */
 
