@@ -1999,6 +1999,14 @@ input, select, textarea {
                         background: #0084D0;
                     }
 
+                ul.social li a.fa-reddit {
+					background: #FF4500;
+				}
+
+					ul.social li a.fa-reddit:hover {
+						background: #FF5B1E;
+					}
+
     ul.socialcompact {
 		list-style: none;
 		padding-left: 0;
