@@ -180,15 +180,6 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-    table{
-        border-collapse: collapse
-    }
-
-    td{
-        border: 1px solid #ddd;
-        padding: 10px;
-    }
-
     .warning{
         color: red
     }
@@ -1517,31 +1508,40 @@ input, select, textarea {
 /* Tables */
 
 	table {
+        border-collapse: collapse ;
 		width: 100%;
 	}
 
 		table tr {
-			border-top: solid 1px #222222;
+			border: 1px solid #ddd;
+            padding: 0.5em 1em 0.5em 1em;
 		}
 
-			table tr:first-child {
-				border-top: 0;
-			}
+            table tr .plateforme {
+			border: 1px solid #222;
+            padding: 0.5em 1em 0.5em 1em;
+		  }
 
 		table td {
+            border: 1px solid #ddd;
 			padding: 0.5em 1em 0.5em 1em;
 		}
+
+            table td .plateforme{
+            border: 1px solid #222;
+			padding: 0.5em 1em 0.5em 1em;
+		  }
 
 		table th {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			font-weight: 700;
-			margin: 0 0 1em 0;
 		}
 
 		table thead {
 			border-bottom: solid 2px #222;
 		}
+
 
 /* Section/Article */
 
