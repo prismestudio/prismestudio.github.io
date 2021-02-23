@@ -16,42 +16,50 @@
         <link rel="icon" type="image/svg" href="images/icones/PRISMEStudioIcone.svg" />
 	</head>
 	<body class="homepage is-preload">
-		<div id="page-wrapper">
+            <div id="page-wrapper">
 
-			<!-- Header -->
-				<section id="header">
-                    <h1>Welcome to</h1>
-
-					<!-- Logo -->
-						<h1><img src="images/L0001.png"></h1>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="en/homeen.html">English (EN)</a></li>
-								<li><a href="fr/homefr.html">Français (FR)</a></li>
-                                <li><a href="es/homees.html">Español (ES)</a></li>
-							</ul>
-						</nav>
-                     <section id="footer">
-                         <br/><br/><br/><br/>
+                <!-- Header -->
+                    <section id="header">
+                        <h1>Welcome to</h1><br/>
+                        <h1><img src="images/L0001.png"></h1>
                     </section>
-                     
-				<!-- Copyright -->
+
+                <!-- Nav -->
+                    <nav id="nav" align="center">
+                        <ul id="swup">
+                            <li><a href="en/homeen.html">English (EN)</a></li>
+                            <li><a href="fr/homefr.html">Français (FR)</a></li>
+                            <li><a href="es/homees.html">Español (ES)</a></li>
+                        </ul>
+                    </nav>
+                
+                <!-- Space -->
+                    <main id="footer">
+                        <br/><br/><br/><br/>
+                    </main>
+
+                <!-- Copyright -->
                     <section id="footer">
-				    <div id="copyright">
-                        <ul class="links">
-                            <li>This website is not suitable for mobile formats.</li>
-                        </ul><br/><br/>
-				        <ul class="links">
-                            <li>&copy; PRISME Studio. All rights reserved.</li>
-				        </ul>
-				    </div>
+                        <div id="bubble">
+                            <ul class="links">
+                                <li>This website is not suitable for mobile formats.</li>
+                            </ul>
+                            <br/><br/>
+                            <ul class="links">
+                                <li>&copy; PRISME Studio. All rights reserved.</li>
+                            </ul>
+                        </div>
                     </section>
+             </div>
 
-
+        
 		<!-- Scripts -->
             <script src="assets/js/diaporama.js"></script>
+            <script src="assets/js/swup.min.js"></script>
+            <script>
+                const swup = new Swup()
+                    plugins: [new SwupOverlayTheme()]
+            </script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
             <script src="assets/js/jquery.scrolly.min.js"></script>

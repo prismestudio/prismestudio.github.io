@@ -1,6 +1,6 @@
 Information:
-     Website version: 1.13
-     Date version: 02/17/2021
+     Website version: 1.14
+     Date version: 02/23/2021
 
 ---
      Dopetrope by HTML5 UP
@@ -17,8 +17,8 @@ Information:
 
 ---
 Credits:
-        Modified by:
-                PRISME Studio
+    Modified by:
+        PRISME Studio
 
 	Icons:
 		Font Awesome (fontawesome.io)
