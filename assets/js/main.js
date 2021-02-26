@@ -2,16 +2,7 @@
 	Dopetrope by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
-const swup = new Swup({
-     plugins: [new SwupOverlayTheme({
-                    color: '#111',
-                    duration: 600,
-                    direction: 'to-right',
-                })];
-});
-    
+*/ 
 
 (function($) {
 
