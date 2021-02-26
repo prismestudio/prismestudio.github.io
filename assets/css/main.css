@@ -72,6 +72,17 @@ input, select, textarea {
 	appearance: none;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #333;
+    border-radius: 30px;
+}
+
+
 /* Basic */
 
 	html {
@@ -3202,22 +3213,3 @@ input, select, textarea {
 			}
 
 	}
-
-/* Animation */
-
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #111;
-    transform-origin: right;
-}
-
-    .transition-wipe {
-      transition: 0.7s;
-      transform:translateX(0);
-    }
-
-    html.is-animating .transition-wipe {
-      transform: translateX(100);
-    }
