@@ -186,6 +186,38 @@ input, select, textarea {
         border-radius: 15px;
     }
 
+/* List */
+
+    #filter-list{
+        display: inline-block;
+        list-style-type: none;
+        border:1px solid #444;
+        border-radius: 30px;
+        padding:0 20px 0 20px;
+    }
+
+        #filter-list li{
+            display: inline-block;
+            list-style-type: none;
+            margin: 0 10px;
+            padding: 0 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            -webkit-transition:all 0.3s ease-in-out;
+            -ms-transition:all 0.3s ease-in-out;
+            -moz-transition:all 0.3s ease-in-out;
+            transition:all 0.3s ease-in-out;
+        }
+
+            #filter-list li .active,#filter-list li:hover{
+                background: #222;
+            }
+
+    .gallery-items {
+        list-style-type: none;
+    }
+    
+
 /* Container */
 
 	.container {
@@ -1616,6 +1648,39 @@ input, select, textarea {
 		.box footer ul.actions {
 			margin-bottom: 0;
 		}
+
+    .boxshop {
+		background: #222;
+		border-radius: 15px;
+		padding: 1em;
+        height: 450px;
+	}
+
+		.boxshop img {
+			position: relative;
+			width: auto;
+			left: 1.75em;
+			top: 1.75em;
+			margin: -4.5em 0 4.25em -3.5em;
+		}
+
+		.boxshop.post header > p {
+			margin-top: 1.25em;
+			font-size: 1.25em;
+		}
+
+		.boxshop a .button {
+            text-align: center;
+			margin-left: auto;
+            margin-right: auto;
+		}
+
+    .boxshoppub {
+		background: #222;
+		border-radius: 15px;
+		padding: 1em;
+        height: 950px;
+	}
 
 	.boxgames {
 		background: #222;
@@ -3145,17 +3210,14 @@ input, select, textarea {
     width: 100%;
     height: 100%;
     background: #111;
-    left: 0;
-    top: 0;
-    transform: scale(-1);
     transform-origin: right;
 }
 
     .transition-wipe {
-      transition: 0.7s cubic-bezier(0,0,0.58,1);
-      transform: scaleX(0);
+      transition: 0.7s;
+      transform:translateX(0);
     }
 
     html.is-animating .transition-wipe {
-      transform: scaleX(1);
+      transform: translateX(100);
     }
