@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Allow: /sitemap.html
-Sitemap: http://prismestudio.github.io/sitemap.xml
