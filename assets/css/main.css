@@ -1742,6 +1742,14 @@ input, select, textarea {
         height: 450px;
     }
 
+    .boxgamesJG {
+        background-image: url(../../images/illustrations/C0004.png);
+        background-size: cover;
+        background-position: center;
+        border-radius: 15px;
+        height: 450px;
+    }
+
     .boxgamesID {
         background-image: url(../../images/illustrations/C0002.png);
         background-size: cover;
@@ -2452,7 +2460,8 @@ input, select, textarea {
 
 	#banner {
 		background: url("../../images/illustrations/I0001.png");
-		background-position: center center;
+        border-radius: 15px;
+		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
 		text-align: center;
