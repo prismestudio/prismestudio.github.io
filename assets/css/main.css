@@ -51,6 +51,19 @@ table {
 	border-spacing: 0;
 }
 
+.team {
+    border-style: hidden;
+}
+
+    .team tr{
+        border-style: hidden;
+    }
+
+    .team img {
+         height: 250px;
+        margin-bottom: -200px;
+    }
+
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -195,6 +208,11 @@ input, select, textarea {
 
     iframe{
         border-radius: 15px;
+    }
+
+/* Jeux */
+    .InDepth {
+        background: #000;
     }
 
 /* List */
@@ -1552,7 +1570,7 @@ input, select, textarea {
 /* Tables */
 
 	table {
-        border-collapse: collapse ;
+        border-collapse: collapse;
 		width: 100%;
         border-radius: 15px;
 	}
@@ -1563,7 +1581,7 @@ input, select, textarea {
 		}
 
             table tr .plateforme {
-			border: 1px solid #222;
+			border-style: hidden;
             padding: 0.5em 1em 0.5em 1em;
 		  }
 
@@ -1573,7 +1591,7 @@ input, select, textarea {
 		}
 
             table td .plateforme{
-            border: 1px solid #222;
+            border-style: hidden;
 			padding: 0.5em 1em 0.5em 1em;
 		  }
 
@@ -2124,6 +2142,14 @@ input, select, textarea {
 					ul.social li a.fa-facebook:hover {
 						background: #4c6aa8;
 					}
+                
+                ul.social li a.fa-instagram {
+					background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+				}
+
+					ul.social li a.fa-instagram:hover {
+						background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+					}
 
 				ul.social li a.fa-twitter {
 					background: #2daae4;
@@ -2380,6 +2406,11 @@ input, select, textarea {
 				font-weight:bold;
 				margin: 0 0.35em 0 0.35em;
 			}
+            
+            #nav > ul > li img{
+                max-height: 45px;
+                vertical-align: middle;
+            }
 
 				#nav > ul > li > ul {
 					display: none;
