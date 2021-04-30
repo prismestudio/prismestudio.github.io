@@ -1,6 +1,6 @@
 Information:
-     Website version: 1.17
-     Date version: 03/31/2021
+     Website version: 1.18
+     Date version: 05/01/2021
 
 ---
      Dopetrope by HTML5 UP
