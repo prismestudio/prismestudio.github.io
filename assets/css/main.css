@@ -107,7 +107,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: linear-gradient(to left, #000, #222);
+		background: #101010;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2430,12 +2430,12 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background:  linear-gradient(to left, #777, #888);
+					background: #888;
                     color: #FFF;
 				}
 
 				#nav > ul > li.current > a {
-					background: linear-gradient(to left, #777, #888);
+					background:#888;
 					color: #FFF !important;
 					font-weight: 700;
 				}
