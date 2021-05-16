@@ -2633,6 +2633,7 @@ input, select, textarea {
         }
 
         .element{
+            padding:0 10px;
             flex: 1 0 100%;
             position: relative;
         }
