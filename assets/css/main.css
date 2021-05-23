@@ -87,7 +87,7 @@ input, select, textarea {
 
 ::-webkit-scrollbar {
     width: 5px;
-    background-color: #000;
+    background-color: #101010;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -2374,9 +2374,14 @@ input, select, textarea {
 /* Header */
 
 	#header {
-		position: relative;
-		padding: 5em 0 4em 0;
-		text-align: center;
+		padding: 1.5em 0 1.5em 0;
+        width: 100%;
+		text-align: flex-start;
+        background: #181818;
+        position:fixed;
+        z-index: 10;
+        border-style:solid;
+        border-color:#222;
 	}
 
 		#header h1 {
@@ -2393,10 +2398,6 @@ input, select, textarea {
 
 /* Nav */
 
-	#nav {
-		margin: 2.5em 0 0 0;
-	}
-
 		#nav > ul {
 			margin: 0;
 		}
@@ -2410,6 +2411,7 @@ input, select, textarea {
             #nav > ul > li img{
                 max-height: 45px;
                 vertical-align: middle;
+                
             }
 
 				#nav > ul > li > ul {
@@ -2418,7 +2420,6 @@ input, select, textarea {
 
 				#nav > ul > li > a {
 					border-radius: 3px;
-                    background: rgba(34, 34, 34, 0.5);
 					color: #DDD;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
@@ -2430,12 +2431,12 @@ input, select, textarea {
 				}
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
-					background: #888;
+					background: #333;
                     color: #FFF;
 				}
 
 				#nav > ul > li.current > a {
-					background:#888;
+					background:#444;
 					color: #FFF !important;
 					font-weight: 700;
 				}
@@ -2586,7 +2587,7 @@ input, select, textarea {
 
 	main {
 		position: relative;
-		padding: 0 0 4em 0;
+		padding: 7em 0 4em 0;
 	}
 
 		main:before {
@@ -2762,10 +2763,16 @@ input, select, textarea {
 				margin: 0 0 0.25em 0.75em;
 			}
 
+        /* Main */
+
+            main {
+                padding-top: 8em;
+            }
+        
 		/* Header */
 
 			#header {
-				padding: 4em 0 3em 0;
+				padding: 2em 0 0 0;
 			}
 
 		/* Banner */
@@ -2858,6 +2865,12 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
+         /* Main */
+
+            main {
+                padding-top: 2em;
+            }
+        
 		/* Header */
 
 			#header {
@@ -2866,7 +2879,7 @@ input, select, textarea {
 
 		/* Nav */
 
-			#nav {
+			#nav, #header{
 				display: none;
 			}
 
@@ -3242,6 +3255,12 @@ input, select, textarea {
 					border-right: solid 4em transparent;
 				}
 
+         /* Main */
+
+            main {
+                padding-top: 4em;
+            }
+        
 		/* Header */
         
             header img{
@@ -3256,7 +3275,7 @@ input, select, textarea {
 
 			#header {
 				text-align: center;
-				padding: 2em 0;
+				padding: 0em 0;
 			}
 
 				#header h1 {
