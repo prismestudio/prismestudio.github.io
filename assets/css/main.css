@@ -110,6 +110,10 @@ input, select, textarea {
 		background: #101010;
 	}
 
+    body.InDepth {
+		background: #000;
+	}
+
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -2613,7 +2617,7 @@ input, select, textarea {
 
 	main {
 		position: relative;
-		padding: 7em 0 4em 0;
+		padding: 10em 0 4em 0;
 	}
 
 		main:before {
@@ -2792,7 +2796,7 @@ input, select, textarea {
         /* Main */
 
             main {
-                padding-top: 8em;
+                padding-top: 10em;
             }
         
 		/* Header */
@@ -2831,6 +2835,10 @@ input, select, textarea {
 			#main {
 				padding: 0 0 30px 0;
 			}
+        
+            h1#presentation>img{
+                max-height: 300px;
+            }
 
 		/* Footer */
 
@@ -2894,7 +2902,7 @@ input, select, textarea {
          /* Main */
 
             main {
-                padding-top: 2em;
+                padding-top: 5em;
             }
         
 		/* Header */
@@ -2908,6 +2916,11 @@ input, select, textarea {
 			#nav, #header{
 				display: none;
 			}
+        
+            #secondheader {
+                margin-top: 0em;
+                margin-top: 0em;
+            }
 
 		/* Intro */
 
@@ -2949,6 +2962,9 @@ input, select, textarea {
 				padding: 0 0 40px 0;
 			}
 
+            h1#presentation>img{
+                max-height: 275px;
+            }
 		/* Copyright */
 
 			#copyright ul.links {
@@ -3284,7 +3300,7 @@ input, select, textarea {
          /* Main */
 
             main {
-                padding-top: 4em;
+                padding-top: 5em;
             }
         
 		/* Header */
@@ -3384,6 +3400,10 @@ input, select, textarea {
                 width: 400px;
             }
         
+            h1#presentation>img{
+                max-height: 175px;
+            }
+        
         /* iframe */
         
         iframe .youtube{
@@ -3401,7 +3421,6 @@ input, select, textarea {
 
 /* xsmall */
     @media screen and (max-width: 400px) {
-        
         /* Box */
 
 			.box {
