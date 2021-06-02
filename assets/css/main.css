@@ -2921,6 +2921,15 @@ input, select, textarea {
                 margin-top: 0em;
                 margin-top: 0em;
             }
+                
+                #secondheader>ul>li:first-child{
+                    margin-left: 3em;
+                    margin-right: 80%;
+                }
+        
+                #secondheader>ul>li{
+                    padding: -3px;
+                }
 
 		/* Intro */
 
@@ -3331,6 +3340,20 @@ input, select, textarea {
 					width: 400px;
                     padding: 0 2em;
 				}
+        
+                #secondheader>ul>li:first-child{
+                    margin-left: 3em;
+                    margin-right: 75%;
+                }
+        
+                    #secondheader>ul>li:first-child::after{
+                        margin-left: 3em;
+                        margin-right: 75%;
+                    }
+        
+                #secondheader>ul>li{
+                    padding: -3px;
+                }
 
 		/* Intro */
 
