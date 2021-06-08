@@ -2521,21 +2521,33 @@ input, select, textarea {
 /* Banner */
 
 	#banner {
-		background: url("../../images/illustrations/I0001.png");
-        border-radius: 15px;
+		/*background: url("../../images/illustrations/I0001.png");*/
+        min-height: 400px;
+        background: #000;
 		background-position: center;
-		background-size: contain;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
-		padding: 10em 0;
-		margin: 1em 0 4em 0;
+		margin: -4.5em 0 4em 0;
 	}
 
+        #banner div{
+            background-image: url("../../images/0000.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            display: auto;
+            position: center;
+            vertical-align:middle;
+            padding:9% 0 7% 0;
+            border-radius: 0;
+            width: 100%;
+            height: 40em
+        }
+
 		#banner header {
-			background-color: rgba(34, 30, 31, 0.75);
+			background-color: rgba(17, 17, 17, 0.90);
 			display: inline-block;
-			padding: 5em 5em;
+			padding: 2.5em 5em;
 			border-radius: 5px;
 		}
 
@@ -2552,7 +2564,7 @@ input, select, textarea {
 				padding: 0;
 				font-style: normal;
 				margin: 0;
-				font-size: 1.5em;
+				font-size: 1.2em;
                 animation: fondu_header 17s ease-in-out infinite both;
 			}
 
@@ -2808,9 +2820,16 @@ input, select, textarea {
 		/* Banner */
 
 			#banner {
-				padding: 6em 0;
-				margin: 1em 0 4em 0;
-			}
+                min-height: 400px;
+                margin: -4.5em 0 4em 0;
+	       }
+
+                #banner div{
+                    padding:9% 0 7% 0;
+                    border-radius: 0;
+                    width: 100%;
+                    height: 30em;
+                }
 
 		/* Intro */
 
@@ -3371,33 +3390,38 @@ input, select, textarea {
 				}
 
 		/* Banner */
+        #banner{
+            min-height: 200px;
+            margin: -4.75em 0 4em 0;
+        }
 
-			#banner {
-				padding: 4em 0;
-				margin: 0 0 4em 0;
+        #banner div{
+            padding:9% 0 7% 0;
+            width: 100%;
+            height: 25em
+        }
+
+		#banner header {
+			background-color: rgba(17, 17, 17, 0.90);
+			display: inline-block;
+			padding: 2.5em 5em;
+			border-radius: 5px;
+		}
+
+			#banner header h2 {
+				font-weight: 700;
+				font-size: 1.5em;
+				margin: 0 0 0.65em 0;
+                animation: fondu_header 17s ease-in-out infinite both;
 			}
 
-				#banner header {
-					padding: 1.5em 1em 1.5em 1em;
-                    margin: 0 4em;
-					display: block;
-					border-radius: 15px;
-				}
-
-					#banner header h2 {
-						font-size: 1.5em;
-						line-height: 1.5em;
-						margin: 0 0 0.25em 0;
-					}
-
-					#banner header p {
-						font-size: 1.2em;
-                        transform: translateX(0);
-					}
-        
-                #banner .actions{
-                    margin: 1em;
-                }
+			#banner header p {
+				color: #FFF;
+				padding: 0;
+				font-style: normal;
+				margin: 0;
+				font-size: 0.9em;
+			}
         
         /* Table */
         
@@ -3510,5 +3534,7 @@ input, select, textarea {
         
             iframe {
                 max-width: 400px;
-            } 
+            }
+        
+        
     }
