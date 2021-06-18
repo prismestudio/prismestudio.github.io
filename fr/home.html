@@ -57,7 +57,6 @@
 
             <!-- Main -->
             <main>
-                
 				<!-- Banner -->
 				    <section id="banner">
 				        <div>
@@ -94,6 +93,15 @@
                                                         <h2><strong>NOUS SOMMES PRISME STUDIO</strong></h2><br/>
                                                         <p> PRISME Studio est un studio de jeux vidéo indépendant basé en France et créé en 2020 lors du confinement lié à l'épidémie de COVID-19 touchant le monde entier. <br/> <br/> Notre mission, créer les meilleurs jeux, créer les meilleurs univers pour nos joueurs afin de réunir une large communauté de de tous les horizons autour de nos jeux. <br/> <br/> En 2020, lorsque le studio a été créé, c'est aussi le début du développement de "In Depth". </p>
                                                     </header>
+                                                </div>
+                                                <br/>
+                                                <header>
+                                                    <h2>Notre Studio</h2>
+                                                </header>
+                                                <div class="mapcontainer">
+                                                    <div class="map">
+                                                        <span>Carte des studios de PRISME Studio dans le monde</span>
+                                                    </div>
                                                 </div>
                                                 <br/>
                                                 <header>
@@ -362,6 +370,91 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+                    charset="utf-8"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+            <script src="../assets/js/jquery.mapael.min.js" charset="utf-8"></script>
+            <script src="../assets/js/maps/world_countries_mercator.min.js" charset="utf-8"></script>
+            <script type="text/javascript">
+                $(function () {
+                    $(".mapcontainer").mapael({
+                        map: {
+                            name: "world_countries_mercator",
+                            zoom: {
+                                enabled: true,
+                                mousewheel: false,
+                                animDuration: 250,
+                                animEasing: "backIn"
+                            },
+                        },
+                        legend: {
+                            plot: {
+                                title: "PRISME Studio",
+                                slices: [{
+                                    size: 20,
+                                    attrs: {
+                                        fill: "#fff"
+                                    },
+                                    label: "Office + Studio",
+                                    sliceValue: "Value 1"
+                                }, {
+                                    size: 20,
+                                    attrs: {
+                                        fill: "#0088c8"
+                                    },
+                                    label: "Office",
+                                    sliceValue: "Value 2"
+                                }, {
+                                    size: 20,
+                                    attrs: {
+                                        fill: "#e9e100"
+                                    },
+                                    label: "Studio",
+                                    sliceValue: "Value 3"
+                                }]
+                            }
+                        },
+                        plots: {
+                            'psfrance': {
+                                latitude: 48.86351731573684,
+                                longitude: 2.340872926136258,
+                                tooltip: {content: "PRISME Studio"},
+                                value: "Value 1"
+                            },
+                        }
+                    });
+                    
+                    var mapael = $(".mapcontainer").data("mapael");
 
+                     var mouseDragging = false;
+                     var mouseDown = false;
+
+                     var $SVGMap = $(".mapcontainer .map svg");
+
+                    $SVGMap.mousedown(function () {
+                        mouseDown = true;
+                    });
+                    
+                    $SVGMap.mousemove(function () {
+                        mouseDragging = mouseDown;
+                    });
+
+                    $SVGMap.mouseup(function (e) {
+                        if (!mouseDragging) {
+                            var newCoordinates = mapael.mapPagePositionToXY(e.pageX, e.pageY);
+
+                            $(".mapcontainer").trigger('zoom', {
+                                fixedCenter: true,
+                                level: "+1",
+                                x: newCoordinates.x,
+                                y: newCoordinates.y
+                            });
+                        }
+                        mouseDragging = false;
+                        mouseDown = false;
+                    });
+                });
+            </script>
 	</body>
 </html>
