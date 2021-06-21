@@ -325,6 +325,10 @@ input, select, textarea {
                 top: 50px;
             }
 
+            .text{
+                display: none;
+            }
+
 /* Container */
 
 	.container {
@@ -2880,6 +2884,10 @@ input, select, textarea {
             iframe .youtube{
                 width: 650px;
             }
+        
+             .mapcontainer{
+                max-width: 700px;
+            }
 
 		/* Section/Article */
 
@@ -3269,6 +3277,14 @@ input, select, textarea {
 			h2, h3, h4, h5, h6 {
 				font-size: 1.25em;
 			}
+        
+            .mapcontainer{
+                display: none;
+            }
+        
+            .text{
+                display: inline;
+            }
          
 		/* Button */
 
