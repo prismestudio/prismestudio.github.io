@@ -3536,6 +3536,10 @@ input, select, textarea {
             .team<table,thead,tbody,tr,th,td{
                 display: block;
             }
+                
+                table.team>td{
+                    text-align: left;
+                }
         
                 table.team p{
                     max-width: 300px;
