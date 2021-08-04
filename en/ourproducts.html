@@ -37,8 +37,8 @@
 								<li class="current">
 									<a href="ourproducts.html">Our Products</a>
 									<ul>
-                                        <li><a href="ourproducts.html#services">Services</a></li>
-										<li><a href="ourproducts.html#games">Games</a></li>
+                                        <li><a href="ourproducts.html#services" class="scrolly">Services</a></li>
+										<li><a href="ourproducts.html#games" class="scrolly">Games</a></li>
 									</ul>
 								</li>
 								<li><a href="faq.html">F.A.Q.</a>
@@ -48,81 +48,62 @@
 								        <li><a href="faqindepth.html">In Depth</a></li>
 								    </ul></li>
                                 <li><a href="https://www.getrevue.co/profile/PRISMEStudio">Blog</a></li>
-                                <li><a href="home.html#AboutUs" class="scrolly">About</a></li>
+                                <li><a href="home.html#AboutUs">About</a></li>
 							</ul>
                         </nav>
             </section>
 
 			<!-- Main -->
-				<main>
-					<div class="container" align="center">
-						<header>
-                            <h3>Our products</h3>
-                        </header><br/>
+				<main align="center">
                         <header id="services">
                             <h2>Our Services</h2>
                         </header>
-                        <div class="row">
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section class="boxgamesJG">
-                                    <br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <header>
-                                        <a href="jeuxgratuits.html"><h3>#Jeux Gratuits</h3></a>
-                                    </header>
-                                    <p></p>
-                                    <footer>
-                                        <ul class="actions">
-                                            <li><a href="jeuxgratuits.html" class="button alt">See official website ></a></li>
-                                        </ul>
-                                    </footer>
-                                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section class="boxgamesPRISMEL">
-                                    <br/><br/><br/><br/><br/><br/><br/><br/>
-                                    <header>
-                                        <a href="prismelauncher.html"><h3>PRISME Launcher</h3></a>
-                                    </header>
-                                    <p></p>
-                                    <footer>
-                                        <ul class="actions">
-                                            <li><a href="prismelauncher.html" class="button alt">See official website ></a></li>
-                                        </ul>
-                                    </footer>
-                                </section>
-                            </div>
-                        </div>
+                        <section class="games JG">
+                            <header>
+                                <a href="jeuxgratuits.html"><img src="../images/icones/IconeJG.png">
+                                <h3>#Jeux Gratuits</h3></a>
+                                <p>Be aware of all the free games of the moment (on all PC platforms, but also PlayStation and even Google Stadia)!</p>
+                            </header>
+                            <footer>
+                                <ul class="actions">
+                                    <li><a href="jeuxgratuits.html" class="button alt">See official website ></a></li>
+                                </ul>
+                            </footer>
+                        </section>
+                        <section class="games PRISMEL last">
+                            <header>
+                                <a href="prismelauncher.html"><img src="../images/icones/IconePRISMEL.png">
+                                <h3>PRISME Launcher</h3></a>
+                                <p>Keep all your PRISME Studio's games up to date!</p>
+                            </header>
+                            <footer>
+                                <ul class="actions">
+                                    <li><a href="prismelauncher.html" class="button alt">See official website ></a></li>
+                                </ul>
+                            </footer>
+                        </section>
                         <header id="games">
                             <h2>Our Games</h2>
                         </header>
-                        <div class="row">
-                            <div class="col-4 col-6-medium col-12-small">
-                                <section class="boxgamesID">
-                                    <br/><br/><br/><br/><br/><br/><br/><br/>
-				                    <header>
-                                        <a href=indepth.html><h3>In Depth</h3></a>
-				                    </header>
-								    <p> </p>
-								    <footer>
-								        <ul class="actions">
-								            <li><a href="indepth.html" class="button alt">See official website ></a></li>
-								        </ul>
-								    </footer>
-				                </section>
-                            </div>
-                            <div class="col-4 col-6-medium col-12-small">
-								<section class="boxgames">
-								    <header>
-                                        <br/><br/><br/><br/><br/>
-								        <h3>And more soon ...</h3>
-                                        <br/><br/><br/><br/>
-								    </header>
-								    <p></p>
-								    <footer></footer>
-								</section>
-				            </div>
-						</div>
-					</div>
+                        <section class="games ID">
+				            <header>
+                                <a href=indepth.html><img src="../images/icones/IconeID.png" width=800px><br/><br/>
+                                <h3>In Depth</h3></a>
+                                <p>Discover In Depth, a dungeon game in voxel art with a humor present in the different bosses of the dungeon.</p>
+				            </header>
+				            <footer>
+								<ul class="actions">
+								    <li><a href="indepth.html" class="button alt">See official website ></a></li>
+								</ul>
+				            </footer>
+				        </section>
+				        <section class="games soon last">
+				            <header>
+								<h3>And more soon ...</h3>
+                                <br/><br/><br/><br/>
+				            </header>
+				            <footer></footer>
+                        </section>
 				</main>
 
 			<!-- Footer -->
@@ -209,6 +190,5 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
-
 	</body>
 </html>

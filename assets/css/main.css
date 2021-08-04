@@ -1778,41 +1778,12 @@ input, select, textarea {
             font-weight: 500;
 		}
 
-    .boxshop {
-		background: #222;
-		border-radius: 15px;
-		padding: 1em;
-        height: 450px;
-	}
-
-		.boxshop img {
-			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
-		}
-
-		.boxshop.post header > p {
-			margin-top: 1.25em;
-			font-size: 1.25em;
-		}
-
-		.boxshop a .button {
-            text-align: center;
-			margin-left: auto;
-            margin-right: auto;
-		}
-
-    .boxshoppub {
-		background: #222;
-		border-radius: 15px;
-		padding: 1em;
-        height: 950px;
-	}
+/* Other display */
 
 	.boxgames {
 		background: #222;
+        background-size: cover;
+        background-position: center;
 		border-radius: 15px;
         height: 450px;
 	}
@@ -1844,44 +1815,54 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
-    .boxgamesPRISME {
+    .PRISME {
         background-image: url(../../images/illustrations/C0001.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        height: 450px;
     }
 
-    .boxgamesPRISMEL {
-        background-image: url(../../images/illustrations/C0003.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        height: 450px;
-    }
-
-    .boxgamesJG {
+    .JG2 {
         background-image: url(../../images/illustrations/C0004.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        height: 450px;
     }
 
-    .boxgamesID {
+    .ID2 {
         background-image: url(../../images/illustrations/C0002.png);
-        background-size: cover;
-        background-position: center;
-        border-radius: 15px;
-        height: 450px;
     }
 
-    .boxcoverPRISMEL {
-        background-image: url(../../images/illustrations/C0003.png);
+/* Our product display */
+    .games {
         background-size: cover;
         background-position: center;
-        border-radius: 15px;
-        height: 520px;
+        height: 600px;
+        margin-bottom: 0;
+    }
+
+    .games>header {
+        padding-top: 3.5em;
+        color: #DDD
+    }
+
+    .games>header>a>img {
+        max-height:15em;
+    }
+
+    .last{
+        margin-bottom: 4em;
+    }
+    
+    .JG {
+        background: linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
+    }
+
+    .PRISMEL {
+        background:#000;
+    }
+
+    .ID {
+        background-image: url(../../images/illustrations/C0002bis.png);
+    }
+
+    .soon {
+        padding-top: 3em;
+        background:#222;
     }
 
     .boxcoverID {
@@ -3018,6 +2999,17 @@ input, select, textarea {
 					margin-top: 0;
 				}
 
+            .games{
+                padding:0 2em;
+                height: 400px
+            }
+        
+            .games>header>a>img {
+                border-radius: 0;
+                max-height:10em;
+                max-width:30em;
+            }
+        
          /* Main */
 
             main {
@@ -3366,6 +3358,11 @@ input, select, textarea {
 					margin-top: 0;
 					font-size: 1em;
 				}
+        
+            .games{
+                padding:0 1em;
+                text-align: center;
+            }
 
 		/* Divided */
 
