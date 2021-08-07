@@ -1740,6 +1740,10 @@ input, select, textarea {
 			top: 1.75em;
 			margin: -4.5em 0 4.25em -3.5em;
 		}
+    
+        .post{
+            -moz-text-align: left;
+        }
 
 		.box .post header {
 			padding-top: 1em;
@@ -1829,6 +1833,8 @@ input, select, textarea {
 
 /* Our product display */
     .games {
+        text-align: center;
+        -moz-text-align: center;
         background-size: cover;
         background-position: center;
         height: 600px;
@@ -2707,6 +2713,7 @@ input, select, textarea {
 	main {
 		position: relative;
 		padding: 10em 0 4em 0;
+        -moz-text-align: center;
 	}
 
 		main:before {

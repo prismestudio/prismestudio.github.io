@@ -2259,7 +2259,7 @@ input, select, textarea {
 		/* Intro */
 
 			#intro {
-				padding: 0;
+				padding:8em 0 0 0;
 			}
 
 				#intro section {
@@ -2275,7 +2275,7 @@ input, select, textarea {
 				}
 
 		/* Main */
-
+        
 			#main {
 				padding: 0 0 30px 0;
 			}

@@ -1,6 +1,6 @@
 Information:
-     Website version: 1.23
-     Date version: 07/12/2021
+     Website version: 1.24
+     Date version: 08/04/2021
 
 ---
      Dopetrope by HTML5 UP
@@ -20,12 +20,13 @@ Credits:
     Modified by:
         PRISME Studio
 
-	Icons:
-		Font Awesome (fontawesome.io)
+    Icons:
+	Font Awesome (fontawesome.io)
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+    Other:
+	jQuery (jquery.com)
+	jQuery - Mapael (github.com/neveldo/jQuery-Mapael)
+	Responsive Tools (github.com/ajlkn/responsive-tools)
 
 ---
 Other:
