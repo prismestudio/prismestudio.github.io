@@ -1657,7 +1657,7 @@ input, select, textarea {
 
 	#header {
 		position: relative;
-		padding: 5em 0 4em 0;
+		padding: 10vh 0 4em 0;
 		text-align: center;
 	}
 
@@ -1669,6 +1669,10 @@ input, select, textarea {
 			line-height: 1;
 		}
 
+        #header .actions {
+            margin-top: 5vh;
+        }
+
     header a {
         text-decoration: none;
     }
@@ -1676,9 +1680,11 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		position: relative;
+		position: absolute;
 		color: #fff;
 		padding: 4em 0;
+        bottom:0;
+        width:100%;
 	}
 
 		#footer:before {
@@ -1824,6 +1830,10 @@ input, select, textarea {
 			#header {
 				padding: 3.5em 0 3em 0;
 			}
+        
+            #header h1 img {
+                max-width: 75vw
+            }
 
 		/* Main */
 
@@ -1927,7 +1937,6 @@ input, select, textarea {
 				}
         
                 #header img {
-					width: 400px;
                     padding: 0 2em;
 				}
 
