@@ -1,6 +1,8 @@
 Information:
-     Website version: 1.26
-     Date version: 10/02/2021
+     Website name: PRISME Studio
+     Website adress: https://prismestudio.github.io/
+     Website version: 1.27
+     Date version: 10/23/2021
 
 ---
      Dopetrope by HTML5 UP
@@ -24,6 +26,7 @@ Credits:
 	Font Awesome (fontawesome.io)
 
     Other:
+	GSAP - GreenSock (greensock.com)
 	jQuery (jquery.com)
 	jQuery - Mapael (github.com/neveldo/jQuery-Mapael)
 	Responsive Tools (github.com/ajlkn/responsive-tools)

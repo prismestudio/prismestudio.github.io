@@ -207,6 +207,7 @@ input, select, textarea {
     
     img {
         border-radius: 15px;
+        max-width: 85vw;
     }
 
     iframe{
@@ -1680,16 +1681,17 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		position: absolute;
+		position: fixed;
 		color: #fff;
-		padding: 4em 0;
+		padding:0;
+        padding-bottom:20px;
         bottom:0;
         width:100%;
 	}
 
 		#footer:before {
 			content: '';
-			position: absolute;
+			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
@@ -1775,21 +1777,7 @@ input, select, textarea {
 				margin: 0 0 0.25em 0.75em;
 			}
 
-		/* Header */
-
-			#header {
-				padding: 4em 0 3em 0;
-			}
-
 		/* Footer */
-
-			#footer {
-				padding: 3em 0;
-			}
-
-				#footer:before {
-					height: 2.5em;
-				}
 
 				#footer header {
 					margin: 0 0 1.5em 0;
@@ -1824,17 +1812,7 @@ input, select, textarea {
             iframe .youtube{
                 width: 350px;
             }
-
-		/* Header */
-
-			#header {
-				padding: 3.5em 0 3em 0;
-			}
         
-            #header h1 img {
-                max-width: 75vw
-            }
-
 		/* Main */
 
 			#main {
@@ -1921,41 +1899,8 @@ input, select, textarea {
 					border-left: solid 4em transparent;
 					border-right: solid 4em transparent;
 				}
-
-		/* Header */
-
-			#header {
-				text-align: center;
-				padding: 2em 0;
-			}
-
-				#header h1 {
-					color: #fff;
-					font-weight: 900;
-					font-size: 1.75em;
-					letter-spacing: -0.035em;
-				}
-        
-                #header img {
-                    padding: 0 2em;
-				}
-
-		/* Footer */
-
-			#footer {
-				padding: 40px 0 20px 0;
-                text-align: center;
-			}
-
 	}
 
 /* xsmall */
     @media screen and (max-width: 400px) {
- 
-        /* Header */
-        
-            #header img {
-					max-width: 375px;
-                    padding: 0 2em;
-				}
     }
