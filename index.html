@@ -34,12 +34,14 @@
                         <h1>Welcome to</h1><br/>
                         <h1><img src="images/L0001.png"></h1>
                         <br/>
-                        <ul class="actions" align="center">
-                            <li><a href="en/home.html" class="button alt">English (EN)</a></li>
-                            <li><a href="fr/home.html" class="button alt">Français (FR)</a></li>
-                            <li><a href="es/home.html" class="button alt">Español (ES)</a></li>
-                        </ul>
-                        <br/>
+                        <form>
+                            <select NAME="ListeUrl" onChange="ChangeUrl(this.form)">
+                                <option SELECTED VALUE="">Select your language </option>
+                                <option value="en/home.html">English (EN)</option>
+                                <option value="es/home.html">Español (ES)</option>
+                                <option value="fr/home.html">Français (FR)</option>
+                            </select>
+                        </form>
                     </section>
 
                 <!-- Copyright -->
@@ -68,6 +70,14 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script defer src="assets/js/main.js"></script>
-
+            <script language="JavaScript">
+                function ChangeUrl(formulaire)
+                {
+                    if (formulaire.ListeUrl.selectedIndex != 0)
+                    {
+                    location.href = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
+                    }
+                }
+            </script>
 	</body>
 </html>

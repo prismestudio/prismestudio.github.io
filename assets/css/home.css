@@ -78,7 +78,17 @@ input::-moz-focus-inner {
 	padding: 0;
 }
 
-input, select, textarea {
+select{
+    border-radius:30px;
+    background:#222;
+    opacity: 90%;
+    color:#FFF;
+    padding:1em 3em;
+    margin:1em 2em;
+    max-width: 90vw;
+}
+
+input, textarea {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
@@ -124,7 +134,7 @@ input, select, textarea {
 			transition: none !important;
 		}
 
-	body, input, textarea, select {
+	body, input, textarea {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #FFF;
