@@ -2665,6 +2665,7 @@ input, select, textarea {
 
         #banner div{
             background-image: url("../../images/0000.png");
+            background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
             display: auto;
