@@ -94,8 +94,11 @@ input, select, textarea {
 	}
 
 	body {
-		background: linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
+		background: url(../../images/0004.png),linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
         background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed,scroll;
+        /*Christmas*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
