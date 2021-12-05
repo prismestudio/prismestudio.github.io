@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+    -webkit-text-size-adjust: none;
 }
 
 ol, ul {
@@ -63,10 +64,6 @@ table {
          height: 250px;
         margin-bottom: -200px;
     }
-
-body {
-	-webkit-text-size-adjust: none;
-}
 
 mark {
 	background-color: transparent;
@@ -118,9 +115,11 @@ input, textarea {
 
 	body {
 		background: #101010;
+        background-image: url(../../images/0004.png);
         /*background-image: url(../../images/illustrations/Fond.gif);*/
         background-repeat: no-repeat;
         background-size: cover;
+        min-height: 100vh;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1697,6 +1696,7 @@ input, textarea {
         padding-bottom:20px;
         bottom:0;
         width:100%;
+        z-index: -10;
 	}
 
 		#footer:before {
