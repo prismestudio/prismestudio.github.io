@@ -94,11 +94,10 @@ input, select, textarea {
 	}
 
 	body {
-		background: url(../../images/0004.png),linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
+		background: linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed,scroll;
-        /*Christmas*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1245,7 +1244,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: -40px;
-					margin-left: -40px;
+					margin-left: 0;
 				}
 
 					.row > * {
@@ -1490,7 +1489,7 @@ input, select, textarea {
 
 				.row {
 					margin-top: -20px;
-					margin-left: -20px;
+					margin-left: 0;
 				}
 
 					.row > * {
@@ -1995,28 +1994,131 @@ input, select, textarea {
 
 
 /* Intro */
-    #intro{
-        padding: 8em 0 5em 0;
+
+    #introstat{
+        padding: 10vh 0 5em 0;
         text-align: center;
     }
 
-    #intro h1{
-        font-size: 4em;
-        line-height: 1em;
-    }
-
-    #intro>ul>li{
-        padding: 0;
-        margin: 0 0 20px 0;
-        position: relative;
-        display: inline-block;
-        list-style: none;
-    }
-
-        #intro>ul>li>img{
-            padding-top:30px;
-            
+        #introstat>h1{
+            font-size: 3.5em;
+            line-height: 1.5em;
         }
+
+        #introstat>h1>img{
+            vertical-align: middle;
+            margin-right: 0.5em;
+        }
+
+    #intro{
+        height: 100vh;
+        padding: 20vh 0 0 0;
+        text-align: center;
+    }
+
+        #intro>h1{
+            font-size: 3.5em;
+            line-height: 1em;
+        }
+
+        #intro>h1>img{
+            height: 4em;
+        }
+
+        #intro>p{
+            font-size: 1.5em;
+            line-height: 1.5em;
+            margin: 0.25em 0 0 0;
+        }
+
+    .joinus{
+        margin: 2em 0 0 0;
+        border-radius: 60px;
+        background: rgba(34, 34, 34, 0.5);
+        padding: 0.5em 4em;
+    }
+
+    .scrolly{
+        text-decoration: none;
+    }
+
+    .scrolldown{
+        margin: 5em 0 0 0;
+        padding: 10vh 0 10vh 0;
+        text-decoration: none;
+    }
+
+/* Content */
+
+    .feature{
+        min-height: 30em;
+        margin-top: 2em;
+    }
+
+    .text>h1{
+        text-transform: uppercase;
+        font-size: 3em;
+        line-height: 1em;
+        margin-bottom: 0.5em;
+    }
+    .g {
+        text-align: end;
+    }
+    
+        .row>.g.text{
+            padding: 5% 2em 5% 2em;
+        }
+
+    .d {
+        text-align: start;
+    }
+
+        .row>.d.text{
+            padding: 5% 2em 5% 2em;
+        }
+
+    .image1{
+        background:url(../../images/freegames/I0001.png);
+        background-size: contain;
+        background-position:top right;
+        background-repeat: no-repeat;
+    }
+
+    .image2{
+        background:url(../../images/freegames/I0002.png);
+        background-size: contain;
+        background-position:top left;
+        background-repeat: no-repeat
+    }
+
+    .image3{
+        background:url(../../images/freegames/I0003.png);
+        background-size: contain;
+        background-position:top right;
+        background-repeat: no-repeat
+    }
+
+    .image4{
+        background:url(../../images/freegames/I0004.png);
+        background-size: contain;
+        background-position:top left;
+        background-repeat: no-repeat
+    }
+
+    .image5{
+        background:url(../../images/freegames/I0005.png);
+        background-size: contain;
+        background-position:top right;
+        background-repeat: no-repeat
+    }
+
+    #def{
+        text-align: center;
+        font-size: 0.75em;
+        line-height: 1.5em;
+        margin-top: 4em;
+    }
+
 /* Header */
 
 	#header {
@@ -2318,24 +2420,6 @@ input, select, textarea {
 				margin: 1em 0 4em 0;
 			}
 
-		/* Intro */
-
-			#intro {
-				padding:8em 0 0 0;
-			}
-
-				#intro section {
-					padding: 1em 2em;
-				}
-
-				#intro .middle:before {
-					left: -12px;
-				}
-
-				#intro .middle:after {
-					right: -12px;
-				}
-
 		/* Main */
         
 			#main {
@@ -2365,7 +2449,6 @@ input, select, textarea {
 			#copyright {
 				margin: 0;
 			}
-
 	}
 
 /* Medium */
@@ -2396,52 +2479,25 @@ input, select, textarea {
 				.box footer ul.actions li:first-child {
 					margin-top: 0;
 				}
-
+        
+            .row > .col-6 {
+                width: 100%;
+                text-align: left;
+            }
+            
+            .text<.d,.g{
+                padding: inherit 4em 0 0 0;
+            }
+        
+            .image1,.image2,.image3,.image4,.image5{
+                height: 35em;
+            }
+    
 		/* Header */
 
 			#header {
 				display: none;
 			}
-
-		/* Nav */
-
-			#nav {
-				display: none;
-			}
-
-		/* Intro */
-
-			#intro {
-				padding: 3em 0 0 0;
-			}
-
-				#intro section {
-					position: relative;
-					border-top: solid 1px #dfdfdf;
-					margin: 0;
-					padding: 40px 0 0 0;
-				}
-
-					#intro section.first {
-						border-top: 0;
-						padding-top: 0;
-					}
-
-					#intro section p {
-						margin: 0;
-					}
-
-				#intro .middle:before, #intro .middle:after {
-					display: none;
-				}
-
-				#intro footer {
-					padding: 3em 0 0 0;
-				}
-
-					#intro footer ul.actions {
-						margin-bottom: 0;
-					}
 
 		/* Main */
 
@@ -2457,6 +2513,10 @@ input, select, textarea {
 
 		/* Nav */
 
+            #nav {
+				display: none;
+            }
+        
 			#page-wrapper {
 				-moz-backface-visibility: hidden;
 				-webkit-backface-visibility: hidden;
@@ -2721,6 +2781,10 @@ input, select, textarea {
 					margin-top: 0;
 					font-size: 1em;
 				}
+        
+            .image1,.image2,.image3,.image4,.image5{
+                height: 25em;
+            }
 
 		/* Divided */
 
@@ -2816,20 +2880,6 @@ input, select, textarea {
 				    max-height: 250px;
                 }
 
-		/* Intro */
-
-			#intro {
-				padding: 2em 0 0 0;
-			}
-
-				#intro section {
-					padding: 40px 0 0 0;
-					margin: 20px 0 0 0;
-				}
-
-				#intro h2 {
-					font-size: 1.25em;
-				}
 
 		/* Banner */
 
@@ -2919,6 +2969,10 @@ input, select, textarea {
 					margin-top: 0;
 					font-size: 1em;
 				}
+        
+            .image1,.image2,.image3,.image4,.image5{
+                height: 15em;
+            }
         
         /* Header */
         

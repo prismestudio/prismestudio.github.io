@@ -326,6 +326,18 @@ input, select, textarea {
                 top: 50px;
             }
 
+            .maptext{
+                margin: 0 1em 0 1em;
+                padding: 0 0 0 0;
+                font-size: 0.8em;
+            }
+
+                p .maptext{
+                    margin: 0 0 0 0;
+                    padding: 0 0 0 0;
+                    font-size: 0.5em;
+                }
+
             .text{
                 display: none;
             }
@@ -1740,6 +1752,10 @@ input, select, textarea {
 
 /* Box */
 
+    #revue-embed{
+        padding: 0 4em 0 4em 1em;
+    }
+
     .box {
 		background: #222;
 		border-radius: 15px;
@@ -2409,6 +2425,30 @@ input, select, textarea {
                         background: #0084D0;
                     }
 
+    ul.socialhome {
+		list-style: none;
+		padding-left: 0;
+		overflow: hidden;
+		cursor: default;
+		margin: 0 0 1.25em 0;
+	}
+
+		ul.socialhome li {
+			display: inline-block;
+			padding-left: 0;
+			margin-left: 0.75em;
+		}
+
+			ul.socialhome li:first-child {
+				margin-left: 0;
+			}
+
+				ul.socialhome li a:before {
+					color: #FFF;
+					font-size: 1.5em;
+					line-height: 1.5em;
+				}
+
 /* Icons */
 
 	.icon {
@@ -2653,7 +2693,7 @@ input, select, textarea {
 	}
 
         #banner div{
-            background-image: url("../../images/0003.png");
+            background-image: url("../../images/0000.png");
             background-size: contain;
             background-position: center;
             background-repeat: no-repeat;
