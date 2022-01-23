@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+    overflow: overlay;
     text-align: center;
 }
 
@@ -80,13 +81,17 @@ input::-moz-focus-inner {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background-color: #101010;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #333;
     border-radius: 30px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    margin: 5px;
 }
 
 

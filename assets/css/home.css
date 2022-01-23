@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
     -webkit-text-size-adjust: none;
+    overflow: overlay;
 }
 
 ol, ul {
@@ -93,8 +94,7 @@ input, textarea {
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background-color: #000;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -102,6 +102,10 @@ input, textarea {
     border-radius: 30px;
 }
 
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0);
+    margin: 5px;
+}
 
 /* Basic */
 
