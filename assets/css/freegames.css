@@ -239,7 +239,7 @@ input, select, textarea {
 
 
     .banner{
-        background: url(../../images/jeuxgratuits/frostpunk.jfif);
+        background: url(https://cdn.discordapp.com/attachments/806582003906117642/943960786269798420/PC_CactusWide_CROP_CL_smll.jpg);
         background-size:auto 100%;
         background-position:right;
         background-repeat: no-repeat;
@@ -2001,7 +2001,7 @@ input, select, textarea {
 /* Intro */
 
     #introstat{
-        padding: 10vh 0 5em 0;
+        padding: 6em 0 5em 0;
         text-align: center;
     }
 
@@ -2631,6 +2631,7 @@ input, select, textarea {
 
 					#navPanel .link:first-child {
 						border-top: 0;
+                        display: none;
 					}
 
 				#navPanel .indent-1 {

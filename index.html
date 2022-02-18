@@ -25,6 +25,7 @@
         <meta content="summary_large_image" name="twitter:card"/>
 		<link rel="stylesheet" href="assets/css/home.css" />
         <link rel="icon" type="image/svg" href="images/icones/PRISMEStudioIcone.svg" />
+        <style>.small{font-size: 14px;}</style>
 	</head>
 	<body class="homepage is-preload">
             <div id="page-wrapper">
@@ -41,6 +42,7 @@
                                 <option value="fr/home.html">Français (FR)</option>
                             </select>
                         </form>
+                        <p class=small>By using our website, you agree to our <a href="content/doc/privacy_policy.pdf">privacy policy</a>.</p>
                     </section>
                 <!-- Copyright -->
                     <section id="footer">
@@ -68,12 +70,8 @@
 			<script defer src="assets/js/main.js"></script>
             <script language="JavaScript">
                 function ChangeUrl(formulaire)
-                {
-                    if (formulaire.ListeUrl.selectedIndex != 0)
-                    {
-                    location.href = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;
-                    }
-                }
+                {if (formulaire.ListeUrl.selectedIndex != 0)
+                    {location.href = formulaire.ListeUrl.options[formulaire.ListeUrl.selectedIndex].value;}}
             </script>
 	</body>
 </html>
