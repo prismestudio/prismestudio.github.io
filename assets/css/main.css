@@ -2061,7 +2061,8 @@ input, select, textarea {
 /* Image */
 
     .faq{
-            width: 100%;
+            max-width: 100%;
+            max-height: 800px;
         }
 
 	.image {
