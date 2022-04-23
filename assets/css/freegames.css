@@ -2052,6 +2052,38 @@ input, select, textarea {
         padding: 10vh 0 10vh 0;
         text-decoration: none;
     }
+    .mouse{
+        margin: auto;
+        align-content: center;
+        width: 25px;
+        height: 50px;
+        border: 2px solid #FFF;
+        border-radius: 20px;
+        display: flex;
+    }
+    .mousewheel{
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: #FFF;
+        border-radius: 50%;
+        margin:auto;
+        animation: move-wheel 1.5s linear infinite;
+    }
+    @keyframes move-wheel{
+        0%{
+            opacity: 0;
+            transform: translateY(-1rem);
+        }
+        95%{
+            opacity: 1;
+            transform: translateY(1rem);
+        }
+        100%{
+            opacity: 0;
+            transform: translateY(1rem);
+        }
+    }
 
 /* Content */
 
@@ -2083,35 +2115,35 @@ input, select, textarea {
         }
 
     .image1{
-        background:url(../../images/freegames/I0001.png);
+        background:url(../../images/freegames/I0001.webp);
         background-size: contain;
         background-position:top right;
         background-repeat: no-repeat;
     }
 
     .image2{
-        background:url(../../images/freegames/I0002.png);
+        background:url(../../images/freegames/I0002.webp);
         background-size: contain;
         background-position:top left;
         background-repeat: no-repeat
     }
 
     .image3{
-        background:url(../../images/freegames/I0003.png);
+        background:url(../../images/freegames/I0003.webp);
         background-size: contain;
         background-position:top right;
         background-repeat: no-repeat
     }
 
     .image4{
-        background:url(../../images/freegames/I0004.png);
+        background:url(../../images/freegames/I0004.webp);
         background-size: contain;
         background-position:top left;
         background-repeat: no-repeat
     }
 
     .image5{
-        background:url(../../images/freegames/I0005.png);
+        background:url(../../images/freegames/I0005.webp);
         background-size: contain;
         background-position:top right;
         background-repeat: no-repeat
@@ -2173,7 +2205,7 @@ input, select, textarea {
 				}
 
 				#nav > ul > li > a {
-					border-radius: 3px;
+					border-radius: 15px;
 					color: #DDD;
 					text-decoration: none;
 					padding: 0.6em 1.2em 0.6em 1.2em;
@@ -2183,6 +2215,10 @@ input, select, textarea {
 					transition: background-color .25s ease-in-out;
 					outline: 0;
 				}
+
+                #nav > ul > li.logo > *{
+                    border-radius: 0;
+                }
 
 				#nav > ul > li:hover > a, #nav > ul > li.active > a {
 					background: #333;
@@ -2200,7 +2236,7 @@ input, select, textarea {
 				}
 
 	.dropotron {
-		border-radius: 5px;
+		border-radius: 15px;
 		background-color: rgba(34, 34, 34, 0.98);
 		padding: 1.25em 1.5em 1.25em 1.5em;
 		font-style: italic;
@@ -2629,9 +2665,20 @@ input, select, textarea {
 					padding: 0 1em 0 1em;
 				}
 
+                    #navPanel .link.logo{
+                        vertical-align: middle;
+                        text-align: center;
+                        height: 125px;
+                        line-height: 125px;
+                        padding: 10px 20px;
+                    }
+        
+                    #navPanel .link.logo>img{
+                        width: 90%;
+                    }
+        
 					#navPanel .link:first-child {
 						border-top: 0;
-                        display: none;
 					}
 
 				#navPanel .indent-1 {

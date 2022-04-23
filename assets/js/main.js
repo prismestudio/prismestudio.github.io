@@ -47,11 +47,11 @@
 				'</div>'
 			)
 				.appendTo($body);
-
-		// Panel.
+    
+        // Panel.
 			$(
 				'<div id="navPanel">' +
-					'<nav>' +
+					'<nav><a class="link logo depth-1" href="home.html"><img src="https://prismestudio.github.io/images/L0001.webp"></a>' +
 						$('#nav').navList() +
 					'</nav>' +
 				'</div>'
@@ -67,5 +67,13 @@
 					target: $body,
 					visibleClass: 'navPanel-visible'
 				});
+    
+    /*$(
+				'<div id="navPanel">' +
+					'<nav>' +
+						$('#nav').navList() +
+					'</nav>' +
+				'</div>'
+			)*/
 
 })(jQuery);

@@ -1,8 +1,8 @@
 Information:
      Website name: PRISME Studio
      Website adress: https://prismestudio.github.io/
-     Website version: 1.29
-     Date version: 01/01/2022
+     Website version: 1.31
+     Date version: 04/23/2022
 
 ---
      Dopetrope by HTML5 UP
