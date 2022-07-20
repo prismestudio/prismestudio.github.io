@@ -36,8 +36,8 @@
 								<li class="current">
 									<a href="ourproducts.html">Our Products</a>
 									<ul>
-                                        <li><a href="ourproducts.html#services" class="scrolly">Services</a></li>
-										<li><a href="ourproducts.html#games" class="scrolly">Games</a></li>
+                                        <li><a href="ourproducts.html#services" class="scrolly" onclick="filterSelection('Services');">Services</a></li>
+										<li><a href="ourproducts.html#games" class="scrolly" onclick="filterSelection('Games');">Games</a></li>
 									</ul>
 								</li>
 								<li><a href="faq.html">F.A.Q.</a>
@@ -53,55 +53,68 @@
             </section>
 			<!-- Main -->
 				<main align="center">
-                        <header id="services">
-                            <h2>Our Services</h2>
-                        </header>
-                        <section class="games JG">
-                            <header>
-                                <a href="freegames.html"><img src="../images/icones/IconeFG.webp">
-                                <h3>#FreeGames</h3></a>
-                                <p>Be aware of all the free games of the moment (on all PC platforms, but also PlayStation and even Google Stadia)!</p>
-                            </header>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="freegames.html" class="button alt">See official website ></a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                        <section class="games PRISMEL last">
-                            <header>
-                                <a href="prismelauncher.html"><img src="../images/icones/IconePRISMEL.webp">
-                                <h3>PRISME Launcher</h3></a>
-                                <p>Keep all your PRISME Studio's games up to date!</p>
-                            </header>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="prismelauncher.html" class="button alt">See official website ></a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                        <header id="games">
-                            <h2>Our Games</h2>
-                        </header>
-                        <section class="games ID">
-				            <header>
-                                <a href=indepth.html><img src="../images/icones/IconeID.webp" width=800px><br/><br/>
-                                <h3>In Depth</h3></a>
-                                <p>Discover In Depth, a dungeon game in voxel art with a humor present in the different bosses of the dungeon.</p>
-				            </header>
-				            <footer>
-								<ul class="actions">
-								    <li><a href="indepth.html" class="button alt">See official website ></a></li>
-								</ul>
-				            </footer>
-				        </section>
-				        <section class="games soon last">
-				            <header>
-								<h3>And more soon ...</h3>
-                                <br/><br/><br/><br/>
-				            </header>
-				            <footer></footer>
-                        </section>
+                    <header id="services games">
+                        <h2>Our products</h2>
+                    </header>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all');"> Show all</button>
+                        <button class="btn" onclick="filterSelection('Services');"> Services</button>
+                        <button class="btn" onclick="filterSelection('Games');"> Games</button>
+                        <button class="btn" onclick="filterSelection('EGames');"> Edited Games</button>
+                        <button class="btn" onclick="filterSelection('DGames');"> Developped Games</button>
+                    </div><br/>
+                    <div class="ourproduct">
+                        <div class="product Services" onclick="location.href='freegames.html'">
+                            <div><img src="../images/illustrations/C0004.png"></div>
+                            <section>
+                                <header>
+                                    <h3>#FreeGames</h3>
+                                    <p>Be aware of all the free games of the moment (on all PC platforms, but also PlayStation and even Google Stadia)!</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="freegames.html" class="button alt">See official website ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Services" onclick="location.href='prismelauncher.html'">
+                            <div><img src="../images/illustrations/C0003.png"></div>
+                            <section>
+                                <header>
+                                    <h3>PRISME Launcher</h3>
+                                    <p>Keep all your PRISME Studio's games up to date!</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="prismelauncher.html" class="button alt">See official website ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Games EGames DGames" onclick="location.href='indepth.html'">
+                            <div><img src="../images/illustrations/C0002.png"></div>
+                            <section>
+                                <header>
+                                    <h3>In Depth</h3>
+                                    <p>Discover In Depth, a dungeon game in voxel art with a humor present in the different bosses of the dungeon.</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="indepth.html" class="button alt">See official website ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Services Games EGames DGames">
+                            <section>
+                                <header>
+                                    <h3>And more soon...</h3>
+                                    <p>; )</p>
+                                </header>
+                            </section>
+                        </div>
+                    </div>
 				</main>
 			<!-- Footer -->
 				<section id="footer">
@@ -172,5 +185,61 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+            <script>
+                var url = String(window.location.href)
+                var games = String(url.substr(url.length - 6))
+                var services = url.substr(url.length - 9)
+                console.log(url)
+                if (games == "#games"){
+                    filterSelection('Games')
+                } else if (services == '#services'){
+                    filterSelection('Services')
+                } else {
+                    filterSelection("all")
+                }
+                
+                function filterSelection(c) {
+                  var x, i;
+                  x = document.getElementsByClassName("product");
+                  if (c == "all") c = "";
+                  for (i = 0; i < x.length; i++) {
+                    RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                  }
+                }
+                // Show filtered elements
+                function AddClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                      element.className += " " + arr2[i];
+                    }
+                  }
+                }
+                // Hide elements that are not selected
+                function RemoveClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                      arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                  }
+                  element.className = arr1.join(" ");
+                }
+                // Add active class to the current control button (highlight it)
+                var btnContainer = document.getElementById("myBtnContainer");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                  });
+                }
+            </script>
 	</body>
 </html>

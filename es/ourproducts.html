@@ -54,54 +54,68 @@
                 </section>
             <!-- Main -->
 				<main align="center">
-                    <header id="services">
+                    <header id="services games">
                         <h2>Nuestros Servicios</h2>
                     </header>
-                        <section class="games JG">
-                            <header>
-                                <a href="freegames.html"><img src="../images/icones/IconeFG.webp">
-                                <h3>#FreeGames</h3></a>
-                                <p>¡Estate al tanto de todos los juegos gratuitos del momento (en todas las plataformas de PC, pero también en PlayStation e incluso en Google Stadia)!</p>
-                            </header>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="freegames.html" class="button alt">Ver sitio web oficial ></a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                        <section class="games PRISMEL last">
-                            <header>
-                                <a href="prismelauncher.html"><img src="../images/icones/IconePRISMEL.webp">
-                                <h3>PRISME Launcher</h3></a>
-                                <p>¡Mantenga todos los juegos de PRISME Studio actualizados!</p>
-                            </header>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="prismelauncher.html" class="button alt">Ver sitio web oficial ></a></li>
-                                </ul>
-                            </footer>
-                        </section>
-                    <header id="games">
-                        <h2>Nuestros Juegos</h2>
-                    </header>
-                        <section class="games ID">
-				            <header>
-                                <a href=indepth.html><img src="../images/icones/IconeID.webp" width=800px><br/><br/><h3>In Depth</h3></a>
-                                <p>Descubrir In Depth, un juego de mazmorras en voxel art con un humor presente en los diferentes jefes de la mazmorra.</p>
-				            </header>
-				            <footer>
-								<ul class="actions">
-								    <li><a href="indepth.html" class="button alt">Ver sitio web oficial ></a></li>
-								</ul>
-				            </footer>
-				        </section>
-                        <section class="games soon last">
-				            <header>
-								<h3>Y más pronto...</h3>
-                                <br/><br/><br/><br/>
-				            </header>
-				            <footer></footer>
-				        </section>
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all');"> Mostrar todo</button>
+                        <button class="btn" onclick="filterSelection('Services');"> Servicios</button>
+                        <button class="btn" onclick="filterSelection('Games');"> Juegos </button>
+                        <button class="btn" onclick="filterSelection('EGames');"> Juegos editados</button>
+                        <button class="btn" onclick="filterSelection('DGames');"> Juegos desarrollados</button>
+                    </div><br/>
+                    <div class="ourproduct">
+                        <div class="product Services" onclick="location.href='freegames.html'">
+                            <div><img src="../images/illustrations/C0004.png"></div>
+                            <section>
+                                <header>
+                                    <h3>#FreeGames</h3>
+                                    <p>¡Estate al tanto de todos los juegos gratuitos del momento (en todas las plataformas de PC, pero también en PlayStation e incluso en Google Stadia)!</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="freegames.html" class="button alt">Ver sitio web oficial ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Services" onclick="location.href='prismelauncher.html'">
+                            <div><img src="../images/illustrations/C0003.png"></div>
+                            <section>
+                                <header>
+                                    <h3>PRISME Launcher</h3>
+                                    <p>¡Mantenga todos los juegos de PRISME Studio actualizados!</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="prismelauncher.html" class="button alt">Ver sitio web oficial ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Games EGames DGames" onclick="location.href='indepth.html'">
+                            <div><img src="../images/illustrations/C0002.png"></div>
+                            <section>
+                                <header>
+                                    <h3>In Depth</h3>
+                                    <p>Descubrir In Depth, un juego de mazmorras en voxel art con un humor presente en los diferentes jefes de la mazmorra.</p>
+                                </header>
+                                <footer>
+                                    <ul class="actions">
+                                        <li><a href="indepth.html" class="button alt">Ver sitio web oficial ></a></li>
+                                    </ul>
+                                </footer>
+                            </section>
+                        </div>
+                        <div class="product Services Games EGames DGames">
+                            <section>
+                                <header>
+                                    <h3>Y más pronto...</h3>
+                                    <p>; )</p>
+                                </header>
+                            </section>
+                        </div>
+                    </div>
 				</main>
                     <!-- Footer -->
                         <section id="footer">
@@ -173,5 +187,61 @@
 			<script src="../assets/js/breakpoints.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+            <script>
+                var url = String(window.location.href)
+                var games = String(url.substr(url.length - 6))
+                var services = url.substr(url.length - 9)
+                console.log(url)
+                if (games == "#games"){
+                    filterSelection('Games')
+                } else if (services == '#services'){
+                    filterSelection('Services')
+                } else {
+                    filterSelection("all")
+                }
+                
+                function filterSelection(c) {
+                  var x, i;
+                  x = document.getElementsByClassName("product");
+                  if (c == "all") c = "";
+                  for (i = 0; i < x.length; i++) {
+                    RemoveClass(x[i], "show");
+                    if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+                  }
+                }
+                // Show filtered elements
+                function AddClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {
+                      element.className += " " + arr2[i];
+                    }
+                  }
+                }
+                // Hide elements that are not selected
+                function RemoveClass(element, name) {
+                  var i, arr1, arr2;
+                  arr1 = element.className.split(" ");
+                  arr2 = name.split(" ");
+                  for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                      arr1.splice(arr1.indexOf(arr2[i]), 1);
+                    }
+                  }
+                  element.className = arr1.join(" ");
+                }
+                // Add active class to the current control button (highlight it)
+                var btnContainer = document.getElementById("myBtnContainer");
+                var btns = btnContainer.getElementsByClassName("btn");
+                for (var i = 0; i < btns.length; i++) {
+                  btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                  });
+                }
+            </script>
 	</body>
 </html>

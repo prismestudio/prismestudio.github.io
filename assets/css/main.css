@@ -1,12 +1,6 @@
 @import url("fontawesome-all.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
-/*
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -109,23 +103,18 @@ input, select, textarea {
 
 
 /* Basic */
-
 	html {
 		box-sizing: border-box;
 	}
-
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
-
 	body {
 		background: #101010;
 	}
-
     body.InDepth {
 		background: #000;
 	}
-
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
 			-webkit-animation: none !important;
@@ -136,7 +125,6 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
@@ -144,108 +132,83 @@ input, select, textarea {
 		font-size: 14pt;
 		line-height: 1.75em;
 	}
-
 	strong, b {
 		color: #FFF;
 		font-weight: 400;
 	}
-
 	i, em {
 		font-style: italic;
 	}
-
 	sub {
 		position: relative;
 		top: 0.5em;
 		font-size: 0.8em;
 	}
-
 	sup {
 		position: relative;
 		top: -0.5em;
 		font-size: 0.8em;
 	}
-
 	blockquote {
 		border-left: solid 0.75em #fff;
 		padding: 1em 0 1em 1.5em;
 		font-style: italic;
 	}
-
 	h1, h2, h3, h4, h5, h6 {
 		color: #FFF;
 		font-weight: 700;
 	}
-
 	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 		color: inherit;
 		text-decoration: none;
 	}
-
 	h2 {
 		font-size: 1.5em;
 	}
-
 	h3 {
 		font-size: 30px;
 	}
-
 	a {
 		color: #fff;
 		text-decoration: underline;
 	}
-
 		a:hover {
 			text-decoration: none;
 		}
-
 	br.clear {
 		clear: both;
 	}
-
 	hr {
 		border: 0;
 		border-top: solid 1px #000000;
 		height: 1px;
 		margin: 2em 0 2em 0;
 	}
-
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
 	}
-
     .warning{
         color: red
     }
-    
     img {
         border-radius: 15px;
         max-width: 95vw;
     }
-
     iframe{
         border-radius: 15px;
     }
-
     .joinus>div{
         background:#101010; 
         border-radius: 10px;
         margin: 0 10em 1em 10em;
         padding: 0.5em 5em;
     }
-    
         .joinus>div>a{
            text-decoration: none;
         }
-        
         .joinus>div>a>p{
            margin-bottom: 0;
         }
-
-/* Jeux */
-    .InDepth {
-        background: #000;
-    }
 
 /* List */
 
@@ -1880,101 +1843,160 @@ input, select, textarea {
 		background: #222;
         background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
 		border-radius: 15px;
         height: 450px;
+        padding: 275px 0 25px 0;
+        cursor: pointer;
+        transition: 0.3s;
 	}
 
-		.boxgames .image.featured {
-			position: relative;
-			width: auto;
-			left: 1.75em;
-			top: 1.75em;
-			margin: -4.5em 0 4.25em -3.5em;
-		}
-
-		.boxgames .post header {
-			padding-top: 1em;
-			margin: 0 0 2em 0;
-		}
-
-		.boxgames .post h2 {
-			font-size: 2.5em;
-			letter-spacing: -0.015em;
-		}
-
-		.boxgames.post header > p {
-			margin-top: 1.25em;
-			font-size: 1.25em;
-		}
-
-		.boxgames footer ul.actions {
-			margin-bottom: 0;
-		}
+    .boxcover {
+		background: #222;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+		border-radius: 15px;
+        height: 450px;
+        padding: 200px 0 25px 0;
+        cursor: pointer;
+        transition: 0.3s;
+	}
 
     .PRISME {
-        background-image: url(../../images/illustrations/C0001.webp);
+        background-image: linear-gradient(180deg, rgba(0,194,255,0) 50%, rgba(34,34,34,1) 95%), url(../../images/illustrations/C0001.png);
     }
 
-    .JG2 {
-        background-image: url(../../images/illustrations/C0004.webp);
+    .FG {
+        background-image: linear-gradient(180deg, rgba(0,194,255,0) 50%, rgba(34,34,34,1) 95%), url(../../images/illustrations/C0004.png);
     }
 
-    .ID2 {
-        background-image: url(../../images/illustrations/C0002.webp);
+    .ID_1 {
+        background-image: linear-gradient(180deg, rgba(0,194,255,0) 50%, rgba(34,34,34,1) 95%), url(../../images/illustrations/C0002bis.webp);
+        background-position: center;
     }
 
 /* Our product display */
-    .games {
+    .product.show{
+        display: inline-flex;
+        transition: 0.3s;
+    }
+
+    .product {
+        display: none;
         text-align: center;
         -moz-text-align: center;
+        background: #555;
         background-size: cover;
         background-position: center;
         height: 600px;
-        margin-bottom: 0;
+        width: calc(100% / 4 - 80px);
+        padding: 0;
+        margin: 0 20px 20px 0;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+    .product>*{
+        overflow: hidden !important;
+    }
+    div.product>div{
+        position: absolute;
+        overflow: hidden;
+        height: 600px;
+        border-radius: 20px;
+        width: calc(100% / 4 - 80px);
+    }
+    .product>div>img{
+        min-height: 600px;
+        width: 100%;
+        max-width: 100%;
+        border-radius: 20px;
+        z-index: 2;
     }
 
-    .games>header {
-        padding-top: 3.5em;
-        color: #DDD
+    .product>section{
+        z-index: 3;
+        background: rgba(1,1,1,0.6);
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        height: 600px;
+        width: calc(100% / 4 - 80px);
+        border-radius: 20px;
+        vertical-align: middle;
+        padding: 350px 20px 50px 20px;
+        margin: 0;
+        transition: 0.3s;
     }
 
-    .games>header>a>img {
-        max-height:15em;
-    }
-
-    .last{
-        margin-bottom: 4em;
-    }
-    
-    .JG {
-        background: linear-gradient(40deg, rgba(113,50,156,1) 0%, rgba(70,59,147,1) 50%, rgba(1,92,215,1) 100%);
-    }
-
-    .PRISMEL {
-        background:#000;
-    }
-
-    .ID {
-        background-image: url(../../images/illustrations/C0002bis.webp);
-    }
-
-    .soon {
-        padding-top: 3em;
-        background:#222;
-    }
-
-    .boxcoverID {
-        background-image: url(../../images/illustrations/C0002.webp);
+    .product>section:hover{
+        background: rgba(1,1,1,0.2);
         background-size: cover;
         background-position: center;
-        border-radius: 15px;
-        height: 520px;
+        cursor: pointer;
+        transition: 0.8s;
     }
 
-        
+    .product>section>header{
+        height: 100px;
+        transition: 0.3s;
+    }
+
+    .product>section>header>h3{
+        font-size: 250%;
+        transition: 0.3s;
+    }
+
+    .product>section:hover>header>h3{
+        font-size: 150%;
+        transition: 0.3s;
+    }
+    
+    .product>section>header>p{
+        overflow-y: scroll;
+        height: 100px;
+        opacity: 0;
+        transition: 0.3s;
+    }
+    
+    .product>section:hover>header>p{
+        opacity: 1;
+        transition: 0.3s;
+    }
+
+    .product>section>footer{
+        transform: translateY(250px);
+        transition: 0.3s;
+    }
+
+    .product>section:hover>footer{
+        transform: translateY(0);
+        transition: 0.3s;
+    }
+
+    #myBtnContainer{
+        margin-bottom: 50px;
+        transition: 0.3s;
+    }
+
+    #myBtnContainer>.btn{
+        margin-right: 15px;
+        transition: 0.3s;
+    }
+
+    #myBtnContainer>.btn:last-child{
+        margin-right: 0;
+        transition: 0.3s;
+    }
+
+    #myBtnContainer>.btn.active{
+        background: #444;
+        transition: 0.3s;
+    }
+       
 
 /* Button */
-
 	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
@@ -2291,7 +2313,6 @@ input, select, textarea {
 				height: 3em;
 				text-align: center;
 				border-radius: 5px;
-				background: #888;
 				-moz-transition: background-color .25s ease-in-out;
 				-webkit-transition: background-color .25s ease-in-out;
 				-ms-transition: background-color .25s ease-in-out;
@@ -2304,69 +2325,9 @@ input, select, textarea {
 					line-height: 1.5em;
 				}
 
-				ul.social li a.fa-facebook {
-					background: #3c5a98;
-				}
-
-					ul.social li a.fa-facebook:hover {
-						background: #4c6aa8;
-					}
-                
-                ul.social li a.fa-instagram {
-					background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-				}
-
-					ul.social li a.fa-instagram:hover {
-						background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-					}
-
-				ul.social li a.fa-twitter {
-					background: #2daae4;
-				}
-
-					ul.social li a.fa-twitter:hover {
-						background: #3dbaf4;
-					}
-
-				ul.social li a.fa-linkedin {
-					background: #006599;
-				}
-
-					ul.social li a.fa-linkedin:hover {
-						background: #1075a9;
-					}
-
-				ul.social li a.fa-youtube {
-                    background: #FF0000;
-                }
-
-                    ul.social li a.fa-youtube:hover {
-                        background: #FF2222;
-                    }
-
-                ul.social li a.fa-discord {
-                    background: #2C2F33;
-                }
-
-                    ul.social li a.fa-discord:hover {
-                        background: #3D4146;
-                    }
-
-                ul.social li a.fa-trello {
-                    background: #0079BF;
-                }
-
-                    ul.social li a.fa-trello:hover {
-                        background: #0084D0;
-                    }
-
-                ul.social li a.fa-reddit {
-					background: #FF4500;
-				}
-
-					ul.social li a.fa-reddit:hover {
-						background: #FF5B1E;
-					}
+                ul.social li a:hover {
+					background: #444;
+				}	
 
     ul.socialcompact {
 		list-style: none;
@@ -2829,6 +2790,8 @@ input, select, textarea {
 	main {
 		position: relative;
 		padding: 10em 0 4em 0;
+        text-align: center;
+        -webkit-text-align: center;
         -moz-text-align: center;
 	}
 
@@ -2973,7 +2936,19 @@ input, select, textarea {
 			body, input, textarea, select {
 				font-size: 12pt;
 			}
+        
+        /* Product */
+        .product {
+            width: calc(100% / 3 - 60px);
+        }
+        
+        div.product>div{
+            width: calc(100% / 3 - 60px);
+        }
 
+        .product>section{
+            width: calc(100% / 3 - 60px);
+        }
 	}
 
 /* Large */
@@ -3068,6 +3043,19 @@ input, select, textarea {
             h1#presentation>img{
                 max-height: 300px;
             }
+        
+        /* Product */
+            .product {
+                width: calc(100% / 2 - 40px);
+            }
+        
+            div.product>div{
+                width: calc(100% / 2 - 40px);
+            }
+        
+            .product>section{
+                width: calc(100% / 2 - 40px);
+            }
 
 		/* Footer */
 
@@ -3125,14 +3113,6 @@ input, select, textarea {
 				}
 
             .games{
-                padding:0 2em;
-                height: 400px
-            }
-        
-            .games>header>a>img {
-                border-radius: 0;
-                max-height:10em;
-                max-width:30em;
             }
         
          /* Main */
@@ -3489,11 +3469,23 @@ input, select, textarea {
 					font-size: 1em;
 				}
         
-            .games{
-                padding:0 1em;
-                text-align: center;
+        /* Product */
+            .product {
+                display: none;
+                width: calc(100% - 40px);
+                margin: 20px;
             }
-
+            div.product>div{
+                position: absolute;
+                overflow: hidden;
+                height: 600px;
+                border-radius: 20px;
+                width: calc(100% - 40px);
+            }
+            .product>section{
+                width: calc(100% - 40px);
+            }
+        
 		/* Divided */
 
 			ul.divided li {
