@@ -1682,6 +1682,11 @@ input, textarea {
 			line-height: 1;
 		}
 
+            #header>h1>img {
+                min-height: 200px;
+                max-height: 25vh;
+            }
+
         #header .actions {
             margin-top: 5vh;
         }
