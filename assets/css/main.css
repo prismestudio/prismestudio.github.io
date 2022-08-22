@@ -192,7 +192,7 @@ input, select, textarea {
     }
     img {
         border-radius: 15px;
-        max-width: 95vw;
+        max-width: 100%;
     }
     iframe{
         border-radius: 15px;
@@ -1790,6 +1790,7 @@ input, select, textarea {
         height:50em;
         max-height:50em;
         align-content: center;
+        overflow: hidden;
     }
 
     section.content{
@@ -1799,6 +1800,8 @@ input, select, textarea {
 
     .twitter-timeline{
         height: 100% !important;
+        max-height: 100% !important;
+        overflow-y: scroll;
     }
 
     .box.youtube>*>iframe{
