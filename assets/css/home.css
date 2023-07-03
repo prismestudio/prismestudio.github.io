@@ -1698,11 +1698,9 @@ input, textarea {
 /* Footer */
 
 	#footer {
-		position: fixed;
 		color: #fff;
 		padding:0;
         padding-bottom:20px;
-        bottom:0;
         width:100%;
         z-index: -10;
 	}
